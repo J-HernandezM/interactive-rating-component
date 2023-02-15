@@ -8,42 +8,50 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="mainContainer">
+    <div class="rateCard">
+      <figure class="rateCard__starFg">
+        <img src="./images/icon-star.svg" alt="star rate image" class="rateCard__starImg">
+      </figure>
+      <p class="rateCard__title">How did we do?</p>
+      <p class="rateCard__description">  Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="rateCard__scoreContainer">
+        <div class="rateCard__score score1">1</div>
+        <div class="rateCard__score score2">2</div>
+        <div class="rateCard__score score3">3</div>
+        <div class="rateCard__score score4">4</div>
+        <div class="rateCard__score score5">5</div>
+      </div>
+      <button class="rateCard__btn btn" type="button">Submit</button>
+    </div>
+    <div class="thanksCard">
+      <div class="thanksCard__up">
+        <div class="thanksCard__selection">
+          <p class="selectedText">You selected 
+            <span class="selectedScore"></span>out of 5
+          </p>
+        </div>
+        <figure class="thanksCard__starFg">
+          <img src="./images/icon-star.svg" alt="star rate image" class="thanksCard__starImg">
+        </figure>
+      </div>
+      <div class="thanksCard__down">
+        <p class="thanksCard__title">  Thank you!</p>
+        <p class="thanksCard__description">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">J-HernandezM</a>.
+    </div>
+  </footer>
 </body>
 </html>
