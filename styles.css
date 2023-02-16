@@ -114,6 +114,32 @@ body{
 .inputRates{
     visibility: hidden;
 }
+.thanksCard{
+    display: grid;
+    grid-template-rows: 60% 40%;
+    place-items: center;
+}
+.thanksCard__title{
+    text-align: center;
+    margin-bottom: 12rem;
+}
+.thanksCard__draw{
+    margin-bottom: 20rem;
+}
+.thanksCard__description{
+    text-align: center;
+}
+.selectedText{
+    height: 30rem;
+    line-height: 30rem;
+
+    border-radius: 15rem;
+    background-color: var(--mid-blue);
+
+    font-weight: 700;
+    color: var(--orange);
+    text-align: center;
+}
 .inactive{
     display: none;
 }
