@@ -2,36 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; color: white;}
+    .attribution a { color: hsl(25, 97%, 53%); text-decoration: none;}
   </style>
 </head>
 <body>
   <main class="mainContainer">
-    <div class="rateCard">
+    <div class="rateCard card">
       <figure class="rateCard__starFg">
         <img src="./images/icon-star.svg" alt="star rate image" class="rateCard__starImg">
       </figure>
-      <p class="rateCard__title">How did we do?</p>
-      <p class="rateCard__description">  Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <p class="rateCard__title titles">How did we do?</p>
+      <p class="rateCard__description descriptions">  Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <div class="rateCard__scoreContainer">
-        <div class="rateCard__score score1">1</div>
-        <div class="rateCard__score score2">2</div>
-        <div class="rateCard__score score3">3</div>
-        <div class="rateCard__score score4">4</div>
-        <div class="rateCard__score score5">5</div>
+        <input id="s1" type="radio" class="inputRates" name="scores">
+        <label for="s1" class="rateCard__score score1">1</label>
+        <input id="s2" type="radio" class="inputRates" name="scores">
+        <label for="s2" class="rateCard__score score2">2</label>
+        <input id="s3" type="radio" class="inputRates" name="scores">
+        <label for="s3" class="rateCard__score score3">3</label>
+        <input id="s4" type="radio" class="inputRates" name="scores">
+        <label for="s4" class="rateCard__score score4">4</label>
+        <input id="s5" type="radio" class="inputRates" name="scores">
+        <label for="s5" class="rateCard__score score5">5</label>
       </div>
-      <button class="rateCard__btn btn" type="button">Submit</button>
+      <button class="rateCard__btn btn" type="button">SUBMIT</button>
     </div>
-    <div class="thanksCard">
+    <div class="thanksCard card inactive">
       <div class="thanksCard__up">
+        <figure class="thanksCard__draw">
+          <img src="./images/illustration-thank-you.svg" alt="thank you illustration" class="draw">
+        </figure>
         <div class="thanksCard__selection">
           <p class="selectedText">You selected 
             <span class="selectedScore"></span>out of 5
@@ -42,8 +49,8 @@
         </figure>
       </div>
       <div class="thanksCard__down">
-        <p class="thanksCard__title">  Thank you!</p>
-        <p class="thanksCard__description">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        <p class="thanksCard__title titles">  Thank you!</p>
+        <p class="thanksCard__description descriptions">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
       </div>
     </div>
   </main>

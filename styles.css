@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+    --orange:hsl(25, 97%, 53%) ;
+    --white:hsl(0, 0%, 100%);
+    --light-grey:hsl(217, 12%, 63%);
+    --medium-grey:hsl(216, 12%, 54%);
+    --dark-blue:hsl(213, 19%, 18%);
+    --BG-blue:hsl(215, 20%, 16%);
+    --very-dark-blue:hsl(216, 12%, 8%);
+    --mid-blue:hsl(210, 19%, 18%);
+
+    --sm:13rem;
+    --md:15rem;
+    --lg:26rem;
+
+    font-size: 6.25%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--very-dark-blue);
+    font-family: 'Overpass', sans-serif;
+}
+.mainContainer{
+    display: grid;
+    place-items: center;
+
+    width: 100vw;
+    height: 98vh;
+}
+.card{
+    display: grid;
+    grid-template-rows: 20% 15% 20% 30% 10%;
+    
+    padding: 24rem;
+    max-width: 335rem;
+    height: 45%;
+
+    background-color: var(--BG-blue);
+    border-radius: 18rem;
+}
+.rateCard__starFg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40rem;
+    height: 40rem;
+
+    border-radius: 50%;
+    background-color: var(--mid-blue);
+}
+.titles{
+    font-size: var(--lg);
+    color: var(--white);
+    font-weight: 700;
+}
+.descriptions{
+    font-size: var(--sm);
+    color: var(--light-grey);
+    line-height: 19rem;
+} 
+.selectedText{
+    font-size: var(--sm);
+}
+.rateCard__btn{
+    width: 100%;
+    height: 36rem;
+    margin: 0rem auto 0 auto;
+
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    border-radius:18rem;
+    border: 0;
+    letter-spacing: 2rem;
+}
+.rateCard__btn:hover{
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
+}
+.rateCard__scoreContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rateCard__score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 43rem;
+    height: 43rem;
+
+    background-color: var(--mid-blue);
+    border-radius: 50%;
+
+    color: var(--light-grey);
+    font-size: var(--md);
+}
+.rateCard__score:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+.inputRates:checked + .rateCard__score{
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+.inputRates{
+    visibility: hidden;
+}
+.inactive{
+    display: none;
+}
+@media (min-width:1000px) {
+    .card{
+        height: 360rem;
+    }
+}
