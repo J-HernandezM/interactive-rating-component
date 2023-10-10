@@ -9,11 +9,11 @@
     --very-dark-blue:hsl(216, 12%, 8%);
     --mid-blue:hsl(210, 19%, 18%);
 
-    --sm:1.3rem;
-    --md:1.5rem;
-    --lg:2.6rem;
+    --sm:13px;
+    --md:15px;
+    --lg:26px;
 
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
 }
 *{
     box-sizing: border-box;
@@ -35,20 +35,20 @@ body{
     display: grid;
     grid-template-rows: 20% 15% 20% 30% 10%;
     
-    padding: 2.4rem;
-    max-width: 33.5rem;
+    padding: 24px;
+    max-width: 335px;
     height: 45%;
 
     background-color: var(--BG-blue);
-    border-radius: 1.8rem;
+    border-radius: 18px;
 }
 .rateCard__starFg{
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 4.0rem;
-    height: 4.0rem;
+    width: 40px;
+    height: 40px;
 
     border-radius: 50%;
     background-color: var(--mid-blue);
@@ -61,22 +61,22 @@ body{
 .descriptions{
     font-size: var(--sm);
     color: var(--light-grey);
-    line-height: 1.9rem;
+    line-height: 19px;
 } 
 .selectedText{
     font-size: var(--sm);
 }
 .rateCard__btn{
     width: 100%;
-    height: 3.6rem;
-    margin: 0rem auto 0 auto;
+    height: 36px;
+    margin: 0px auto 0 auto;
 
     background-color: var(--orange);
     color: var(--white);
     font-weight: 700;
-    border-radius:1.8rem;
+    border-radius:18px;
     border: 0;
-    letter-spacing: .2rem;
+    letter-spacing: 2px;
 }
 .rateCard__btn:hover{
     color: var(--orange);
@@ -93,8 +93,8 @@ body{
     justify-content: center;
     align-items: center;
 
-    width: 4.3rem;
-    height: 4.3rem;
+    width: 43px;
+    height: 43px;
 
     background-color: var(--mid-blue);
     border-radius: 50%;
@@ -121,19 +121,19 @@ body{
 }
 .thanksCard__title{
     text-align: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 12px;
 }
 .thanksCard__draw{
-    margin-bottom: 2.0rem;
+    margin-bottom: 20px;
 }
 .thanksCard__description{
     text-align: center;
 }
 .selectedText{
-    height: 3.0rem;
-    line-height: 3.0rem;
+    height: 30px;
+    line-height: 30px;
 
-    border-radius: 1.5rem;
+    border-radius: 15px;
     background-color: var(--mid-blue);
 
     font-weight: 700;
@@ -145,6 +145,6 @@ body{
 }
 @media (min-width:1000px) {
     .card{
-        height: 36.0rem;
+        height: 360px;
     }
 }
